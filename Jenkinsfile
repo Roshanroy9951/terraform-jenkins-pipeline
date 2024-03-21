@@ -1,4 +1,5 @@
 pipeline {
+                git branch: 'main', url: 'https://jenkins-scripts.git'
     agent any
 
     parameters {
@@ -15,7 +16,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/CodeSagarOfficial/jenkins-scripts.git'
+                git branch: 'main', url: 'https://https://github.com/Roshanroy9951/jenkins-scripts.git'
             }
         }
         stage('Terraform init') {
